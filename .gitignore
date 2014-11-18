@@ -1,29 +1,34 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# -- Cloud9 ------------------------------
+.c9/
 
-# Precompiled Headers
-*.gch
-*.pch
+# -- Sistemas Operativos ------------------------------
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Windows
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# Linux
+
+.*
+!.gitignore
+!.htaccess
+*~
+
+# Mac OS X
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# -- Editores -----------------------------------------
+
+# sublimetext
+/*.sublime-project
+*.sublime-workspace
