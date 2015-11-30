@@ -32,3 +32,4 @@ Icon
 # sublimetext
 /*.sublime-project
 *.sublime-workspace
+*.cfg
