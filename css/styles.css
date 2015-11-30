@@ -2754,3 +2754,68 @@ h5 {
 
 h6 {
   font-size: 0.8em; }
+
+footer {
+  padding-top: .1em;
+  margin-top: .5em;
+  background: rgba(0, 0, 0, 0.4); }
+
+.copyr {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 1em;
+  padding-bottom: 1em; }
+  .copyr .humans {
+    float: left;
+    margin-right: 1em; }
+  .copyr .texto {
+    float: left;
+    margin-top: 1em;
+    font-size: .8em; }
+    .copyr .texto a {
+      display: inline-block;
+      margin: 0 1em 0 0; }
+      .copyr .texto a:visited, .copyr .texto a:link {
+        color: white;
+        text-decoration: none;
+        position: relative;
+        border-bottom: 1px dotted white; }
+      .copyr .texto a:hover {
+        color: gray;
+        background-color: black;
+        box-shadow: 0 0 0 2px black; }
+      @media (min-width: 480px) {
+        .copyr .texto a:before {
+          color: white;
+          content: "|";
+          position: absolute;
+          right: -1em; } }
+
+.banner {
+  height: 550px; }
+  .banner .fondo {
+    background-image: url(/img/paisajes/volcan_osorno.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: green; }
+
+.version {
+  padding: 1em; }
+  .version a {
+    text-align: center; }
+
+.nav-bar {
+  margin-bottom: 1em; }
+  .nav-bar:focus {
+    background-color: black;
+    color: white; }
+
+.texto {
+  background-color: rgba(0, 0, 0, 0.3);
+  max-width: 20em;
+  font-size: 1.2em;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: .5em; }

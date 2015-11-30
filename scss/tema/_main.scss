@@ -1,0 +1,46 @@
+.banner
+{
+	height: 550px;
+	.fondo
+	{
+		background-image: url(/img/paisajes/volcan_osorno.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		// background-attachment: fixed;
+		// background-position:0 -477px;
+		background-color: green; 
+	}
+}
+
+.version
+{
+	// color: rgba(black, 	0.1)
+	padding:1em;
+	a
+	{
+		text-align:center;
+	}
+}
+
+.nav-bar
+{
+	&:focus
+	{
+		background-color:black;
+		color:white;
+	}
+	margin-bottom:1em;
+}
+
+.texto
+{
+	background-color: rgba(black, .3);
+	max-width: 20em;
+	font-size: 1.2em;
+	color: white;
+	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	padding: 1em;
+	margin-top:2em;
+	border-radius: .5em;
+}
