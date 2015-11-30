@@ -1,0 +1,29 @@
+{
+  "name": "angloweb",
+  "version": "0.0.1",
+  "description": "sitio web Anglo diseño",
+  "author": "André Ribet <andre@anglo.cl>",
+  "contributors": [
+    {
+      "name": "Gloria Rebolledo",
+      "email": "gloria@anglo.cl"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/escueladigital/ED-GRID"
+  },
+  "bugs": {
+    "url": "https://github.com/escueladigital/ED-GRID/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1.1",
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-postcss": "^6.0.1",
+    "gulp-sass": "^2.0.4"
+  },
+  "license": "ISC"
+}
