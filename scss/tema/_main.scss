@@ -10,6 +10,18 @@
 		// background-position:0 -477px;
 		background-color: green; 
 	}
+	.texto
+	{
+		background-color: rgba(black, .3);
+		max-width: 20em;
+		font-size: 1.2em;
+		color: white;
+		text-shadow:1px 1px 1px rgba(0, 0, 0, 0.5);
+		text-align: center;
+		padding: 1em;
+		margin-top:2em;
+		border-radius: .5em;
+	}
 }
 
 .version
@@ -32,15 +44,12 @@
 	margin-bottom:1em;
 }
 
-.texto
+
+.formulario
 {
-	background-color: rgba(black, .3);
-	max-width: 20em;
-	font-size: 1.2em;
-	color: white;
-	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.5);
-	text-align: center;
-	padding: 1em;
-	margin-top:2em;
-	border-radius: .5em;
+	iframe
+	{
+		margin: 1em auto;
+		display: inherit;
+	}
 }

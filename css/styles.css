@@ -2797,6 +2797,16 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: green; }
+  .banner .texto {
+    background-color: rgba(0, 0, 0, 0.3);
+    max-width: 20em;
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    border-radius: .5em; }
 
 .version {
   padding: 1em; }
@@ -2809,13 +2819,6 @@ footer {
     background-color: black;
     color: white; }
 
-.texto {
-  background-color: rgba(0, 0, 0, 0.3);
-  max-width: 20em;
-  font-size: 1.2em;
-  color: white;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  padding: 1em;
-  margin-top: 2em;
-  border-radius: .5em; }
+.formulario iframe {
+  margin: 1em auto;
+  display: inherit; }

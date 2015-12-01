@@ -1,0 +1,18 @@
+/* TEAM */
+    designer,developer: André Ribet A.
+    Site: aribet[at]gmail[dot]com
+    Twitter: @aribet
+    Location: Talcahuano, Chile.
+
+/* THANKS */
+    https://github.com
+    https://mejorando.la
+    http://humanstxt.org/ES
+    http://www.google.com/fonts
+    http://subtlepatterns.com/
+                            
+/* SITE */
+    Last update:2015/12/01
+    Language: English / Spanish
+    Doctype:HTML5
+    IDE: Sublime Text / GIT / Gulp / Sass / jade

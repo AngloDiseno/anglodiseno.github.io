@@ -13,8 +13,8 @@ html(lang="es")
 				.ed-item.total.abcenter
 					h1
 						img(src="img/anglo_marca.png").logo
-			.ed-container.center
-				.ed-item.version
+			.ed-container
+				.ed-item.version.center
 					a(class="center" href="mailto:info@anglo.cl") info@anglo.cl
 		nav
 			.ed-container
@@ -24,12 +24,19 @@ html(lang="es")
 						li: a(href="#marca") marca
 						li: a(href="#disenos") diseños
 						li: a(href="#video") video
-		.ed-container.full.banner
+		.banner.ed-container.full
 			.ed-item.fondo.center
 				.texto.center
 					| Diseñamos para ti, para tu carácter, para tu imagen, para tu entorno.
+
+		.formulario.ed-container.center
+			.ed-item
+				h2 Cuentanos, Hablanos.
+				a(id="foxyform_embed_link_249631" href="http://es.foxyform.com/") foxyform
+				| <script type="text/javascript">(function(d, t){var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; g.src = "http://es.foxyform.com/js.php?id=249631&sec_hash=19623764138&max-width=80%"; s.parentNode.insertBefore(g, s); }(document, "script"));</script>
+
 		.ed-container
-			.ed-item.web-75
+			.ed-item
 				a(id="web")
 					h2 web
 					div ¡pronto!
@@ -48,7 +55,7 @@ html(lang="es")
 					.ed-container
 						.ed-item
 							.humans
-								a(href="//humans.txt" target="_blank")
+								a(href="/humans.txt" target="_blank")
 									img(src="img/img-humans/humanstxt-transparent-color.png" alt="HUMANS.txt")
 							.texto
 								| diseño y desarrollo 

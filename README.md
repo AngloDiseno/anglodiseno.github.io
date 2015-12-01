@@ -1,25 +1,11 @@
-# web
+# Sitio Web Anglo Diseño
 
+Anglo es una agencia de diseño, conformada por André E. Ribet A. y Gloria A. Rebolledo R.
 
+Nuestro objetivo como empresa es dar solución gráfica a las necesidades de comunicación de personas, empresas y organizaciones, para distintos medios, sean impresos, audiovisuales o para internet.
 
+Este repositorio contiene el proyecto del sitio web, que presenta nuestra empresa, por medio de ejemplos de soluciones realizadas a nuestros clientes.
 
+El sitio web es desarrollado en html y css, ayudado de Jade y Sass, gestionando las tareas por medio de Gulp y alojado en Github.
 
-
-
-
-
-
-
-
-
-ED GRID  es un FRAMEWORK SOLO CSS para crear diseños web responsive y mobile first. 
-
-Creado por Álvaro Felipe de Escuela Digital http://escueladigital.pe
-
-Documentación oficial: http://escueladigital.pe/ed-grid
-
-Este repositorio incluye las siguientes carpetas:
-
-* **css** - contiene ed-grid.css (copie este archivo en su proyecto para usar ed-grid en su versión css)
-* **ed-grid** - contiene ed-grid en su version sass. Puede copiar esta carpeta en sus proyectos para incluir edgrid con sass.
-* **scss** - contiene archivos adicionales sass para poder comenzar con su proyecto
+El equipo de Anglo.
