@@ -37,18 +37,29 @@ html(lang="es")
 
 		.ed-container
 			.ed-item
-				a(id="web")
-					h2 web
-					div ¡pronto!
-				a(id="marca")
-					h2 marca
-					div ¡pronto!
-				a(id="disenos")
-					h2 diseños
-					div ¡pronto!
-				a(id="video")
-					h2 video
-					div ¡pronto!
+				.ed-container
+					.ed-item
+						a(id="web")
+							h2 web
+							.ed-container
+								.ed-item.pieza.web-1-3
+									p ejemplo 1
+								.ed-item.pieza.web-1-3
+									p ejemplo 2
+								.ed-item.pieza.web-1-3
+									p ejemplo 3
+					.ed-item
+						a(id="marca")
+							h2 marca
+							div ¡pronto!
+					.ed-item
+						a(id="disenos")
+							h2 diseños
+							div ¡pronto!
+					.ed-item
+						a(id="video")
+							h2 video
+							div ¡pronto!
 		footer
 			.ed-container.total.copyr
 				.ed-item
