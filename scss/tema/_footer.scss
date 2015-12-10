@@ -1,9 +1,14 @@
 footer
 {
-	padding-top: .1em;
-	margin-top: .5em;
 	background:rgba(black, .4);
+	height:150px;
+	padding-top: .1em;
+	position: relative;
+	margin-top: -150px; /* negative value of footer height */
+	height: 150px;
 }
+
+
 .copyr
 {
 	color:rgba(white, .6);

@@ -2755,10 +2755,17 @@ h5 {
 h6 {
   font-size: 0.8em; }
 
+.body.contacto nav .contacto {
+  color: green; }
+
 footer {
+  background: rgba(0, 0, 0, 0.4);
+  height: 150px;
   padding-top: .1em;
-  margin-top: .5em;
-  background: rgba(0, 0, 0, 0.4); }
+  position: relative;
+  margin-top: -150px;
+  /* negative value of footer height */
+  height: 150px; }
 
 .copyr {
   color: rgba(255, 255, 255, 0.6);
@@ -2790,12 +2797,17 @@ footer {
           position: absolute;
           right: -1em; } }
 
+main {
+  min-height: 100vh;
+  padding-bottom: 150px;
+  position: relative; }
+
 .banner {
   height: 550px; }
   .banner .fondo {
     background-image: url(/img/paisajes/volcan_osorno.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center center;
     background-color: green; }
   .banner .texto {
     background-color: rgba(0, 0, 0, 0.3);
@@ -2808,17 +2820,13 @@ footer {
     margin-top: 2em;
     border-radius: .5em; }
 
-.version {
-  padding: 1em; }
-  .version a {
-    text-align: center; }
-
-.nav-bar {
-  margin-bottom: 1em; }
-  .nav-bar:focus {
-    background-color: black;
-    color: white; }
-
 .formulario iframe {
   margin: 1em auto;
   display: inherit; }
+
+.contacto iframe {
+  display: inherit;
+  height: 650px;
+  width: 100%;
+  border: none;
+  background-color: lightblue; }
