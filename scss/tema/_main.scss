@@ -6,7 +6,7 @@ main
 }
 .banner
 {
-	height: 550px;
+	min-height: 550px;
 	.fondo
 	{
 		background-image: url(/img/paisajes/volcan_osorno.jpg);
@@ -64,6 +64,10 @@ main
 {
 	// position: relative;
 	// background-color:lightblue;
+	>div
+	{
+		margin-bottom:2em;
+	}
 	iframe
 	{
 		// position:absolute;
@@ -71,6 +75,9 @@ main
 		height:650px;
 		width:100%;
 		border:none;
-		background-color:lightblue;
+		body.backgroundBg
+		{
+			background-color:transparent !important;
+		}
 	}
 }
