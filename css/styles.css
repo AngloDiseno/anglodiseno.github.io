@@ -2807,8 +2807,7 @@ main {
   .banner .fondo {
     background-image: url(/img/paisajes/volcan_osorno.jpg);
     background-size: cover;
-    background-position: center center;
-    background-color: green; }
+    background-position: center center; }
   .banner .texto {
     background-color: rgba(0, 0, 0, 0.3);
     max-width: 20em;
