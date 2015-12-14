@@ -1,3 +1,9 @@
+main
+{
+	min-height: 100vh;
+	padding-bottom: 150px;
+	position: relative;
+}
 .banner
 {
 	height: 550px;
@@ -5,9 +11,10 @@
 	{
 		background-image: url(/img/paisajes/volcan_osorno.jpg);
 		background-size: cover;
-		background-repeat: no-repeat;
+		// background-repeat: no-repeat;
 		// background-attachment: fixed;
 		// background-position:0 -477px;
+		background-position: center center;
 		background-color: green; 
 	}
 	.texto
@@ -24,25 +31,24 @@
 	}
 }
 
-.version
-{
-	// color: rgba(black, 	0.1)
-	padding:1em;
-	a
-	{
-		text-align:center;
-	}
-}
+// .version
+// {
+// 	padding:1em;
+// 	a
+// 	{
+// 		text-align:center;
+// 	}
+// }
 
-.nav-bar
-{
-	&:focus
-	{
-		background-color:black;
-		color:white;
-	}
-	margin-bottom:1em;
-}
+// .nav-bar
+// {
+// 	&:focus
+// 	{
+// 		background-color:black;
+// 		color:white;
+// 	}
+// 	margin-bottom:1em;
+// }
 
 
 .formulario
@@ -51,5 +57,20 @@
 	{
 		margin: 1em auto;
 		display: inherit;
+	}
+}
+
+.contacto
+{
+	// position: relative;
+	// background-color:lightblue;
+	iframe
+	{
+		// position:absolute;
+		display: inherit;
+		height:650px;
+		width:100%;
+		border:none;
+		background-color:lightblue;
 	}
 }

@@ -1,63 +1,9 @@
-<!DOCTYPE html>
-html(lang="es")
-	head
-		meta(charset="UTF-8")
-		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
-		link(rel="stylesheet", href="css/styles.css")
-		//- script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
-		script(src="js/scripts.js")
-		title Anglo | Diseño 
-		| <script src="//load.sumome.com/" data-sumo-site-id="c4c49020e87603b9b6d0a82ea3ca81121613a70cf9bd8cbb9f53beba76a26178" async="async"></script>
-	body
-		header
-			.ed-container
-				.ed-item.total.abcenter
-					h1
-						img(src="img/anglo_marca.png").logo
-			.ed-container
-				.ed-item.version.center
-					a(class="center" href="mailto:info@anglo.cl") info@anglo.cl
-		nav
-			.ed-container
-				.ed-item
-					ul.ed-menu.nav-bar.web-horizontal
-						li: a(href="#web") web
-						li: a(href="#marca") marca
-						li: a(href="#disenos") diseños
-						li: a(href="#video") video
+extends ./layout
+block title
+	title Anglo | Diseño | inicio
+body.inicio
+	block container
 		.banner.ed-container.full
 			.ed-item.fondo.center
 				.texto.center
 					| Diseñamos para ti, para tu carácter, para tu imagen, para tu entorno.
-
-		.formulario.ed-container.center
-			.ed-item
-				h2 Cuéntanos!, envía un mensaje.
-				a(id="foxyform_embed_link_249631" href="http://es.foxyform.com/") foxyform
-				| <script type="text/javascript">(function(d, t){var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; g.src = "http://es.foxyform.com/js.php?id=249631&sec_hash=19623764138&max-width=80%"; s.parentNode.insertBefore(g, s); }(document, "script"));</script>
-
-		.ed-container
-			.ed-item
-				a(id="web")
-					h2 web
-					div ¡pronto!
-				a(id="marca")
-					h2 marca
-					div ¡pronto!
-				a(id="disenos")
-					h2 diseños
-					div ¡pronto!
-				a(id="video")
-					h2 video
-					div ¡pronto!
-		footer
-			.ed-container.total.copyr
-				.ed-item
-					.ed-container
-						.ed-item
-							.humans
-								a(href="/humans.txt" target="_blank")
-									img(src="img/img-humans/humanstxt-transparent-color.png" alt="HUMANS.txt")
-							.texto
-								| diseño y desarrollo 
-								a(href="http://anglo.cl" target="_blank" title="anglo | diseño") anglo.cl
