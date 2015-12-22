@@ -9,7 +9,8 @@ var gulp = require('gulp'),
     autoprefixer = require('autoprefixer'),
     sass = require('gulp-sass'),
     jade = require('gulp-jade'),
-    connect = require('gulp-connect');
+    connect = require('gulp-connect'),
+    notify = require('gulp-notify');
 
 /**
  * Variable de entorno.
@@ -32,10 +33,12 @@ gulp.task('sass', function () {
 
   return gulp.src('./scss/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .on('error', notify.onError( { message: 'Fallo - SCSS' }))
     .pipe(plumber())
     .pipe(postcss(processors))
     .pipe(gulp.dest('./css'))
-    .pipe(connect.reload());
+    .pipe(connect.reload())
+    .pipe(notify({ message: 'OK - SCSS' }));
 });
 
 
@@ -49,6 +52,7 @@ gulp.task('jade', function() {
     .pipe(jade({
       pretty: true
     }))
+    .on('error', notify.onError( { message: 'Fallo - JADE' }))
     .pipe(gulp.dest('./'))
     .pipe(connect.reload());
 });
