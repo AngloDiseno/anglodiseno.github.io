@@ -1,19 +1,20 @@
-extends ./layout.jade
+extends ./layout
 block title
 	title Anglo | Diseño | Servicios
-body.servicios
-	block container
-		.banner.ed-container.full
-			.ed-item.fondo.center
-				.ed-container
-					.ed-item
-						h2 Servicios
-				.contacto.ed-container.full.center
-					.ed-item.no-padding
-						ul
-							li Diseño de Imagen Corporativa
-							li Diseño de Tarjetas
-							li Diseño Web
-							li Seo
-							li Sem
-
+block body
+	body.servicios
+		main
+			include include/header.jade
+			.banner.ed-container.full
+				.ed-item.fondo.center
+					.ed-container
+						.ed-item
+							h2 Servicios
+					.ed-container.full.center
+						.ed-item.no-padding
+							ul
+								li Diseño de Imagen Corporativa
+								li Diseño de Tarjetas
+								li Diseño Web
+								li Estrategia y Marqueting Digital
+		include include/footer.jade

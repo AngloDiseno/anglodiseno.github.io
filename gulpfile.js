@@ -52,9 +52,9 @@ gulp.task('jade', function() {
     .pipe(jade({
       pretty: true
     }))
-    .on('error', notify.onError( { message: 'Fallo - JADE' }))
     .pipe(gulp.dest('./'))
-    .pipe(connect.reload());
+    .pipe(connect.reload())
+    .on('error', notify.onError( { message: 'Fallo - JADE' }));
 });
 
 

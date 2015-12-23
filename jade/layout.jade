@@ -5,44 +5,17 @@ html(lang="es")
 		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
 		link(rel="stylesheet", href="css/styles.css")
 		//- script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
-		script(src="js/scripts.js")
-		script(src="js/chat.js")
-		script(src="js/analytics.js")
+		include include/scripts.jade
 		block title
 			title Anglo | Diseño
 	block body
 		body.layout
 			block content
 				main
-					block header
-						header
-							.ed-container
-								.ed-item.total.abcenter
-									h1
-										img(src="img/anglo_marca.png").logo
-					block nav
-						nav
-							.ed-container
-								.ed-item
-									ul.ed-menu.nav-bar.web-horizontal
-										li: a(href="./" class="inicio") Inicio
-										li: a(href="./portafolio.html" class="portafolio") Portafolio
-										li: a(href="./servicios.html" class="servicios") Servicios
-										li: a(href="./contacto.html" class="contacto") Contacto
-									br
+					include include/header.jade
 					block container
 						.banner.ed-container.full
 							.ed-item.fondo.center
-								div contenido
-				footer
-					block footer
-						.ed-container.total.copyr
-							.ed-item
-								.ed-container
-									.ed-item
-										.humans
-											a(href="/humans.txt" target="_blank")
-												img(src="img/img-humans/humanstxt-transparent-color.png" alt="HUMANS.txt")
-										.texto
-											| diseño y desarrollo 
-											a(href="http://anglo.cl" target="_blank" title="anglo | diseño") anglo.cl
+								div contenido en layout
+				block footer
+					include include/footer.jade

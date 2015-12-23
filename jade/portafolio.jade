@@ -1,42 +1,45 @@
-extends ./layout.jade
+extends ./layout
 block title
 	title Anglo | Diseño | Portafolio
-body.portafolio
-	block container
-		.banner.ed-container.full
-			.ed-item.fondo.center
-				.ed-container
-					.ed-item
-						nav
-						a(id="portafolio")
-							h2 Portafolio
+block body
+	body.portafolio
+		main
+			include include/header.jade
+			.banner.ed-container.full
+				.ed-item.fondo.center
+					.ed-container
+						.ed-item
+							a(id="portafolio")
+								h2 Portafolio
+								.ed-container
+									.ed-item
+										nav
+											ul.ed-menu.nav-bar.web-horizontal
+												li: a(href="#web") webs
+												li: a(href="#marca") marca
+												li: a(href="#disenos") diseños
+												li: a(href="#video") video
+					.ed-container
+						.ed-item
+							a(id="web")
+							h3 web
 							.ed-container
-								.ed-item
-									ul.ed-menu.nav-bar.web-horizontal
-										li: a(href="#web") web
-										li: a(href="#marca") marca
-										li: a(href="#disenos") diseños
-										li: a(href="#video") video
-				.ed-container
-					.ed-item
-						a(id="web")
-						h3 web
-						.ed-container
-							.ed-item.pieza.web-1-3
-								p ejemplo 1
-							.ed-item.pieza.web-1-3
-								p ejemplo 2
-							.ed-item.pieza.web-1-3
-								p ejemplo 3
-					.ed-item
-						a(id="marca")
-						h3 marca
-						div ¡pronto!
-					.ed-item
-						a(id="disenos")
-						h3 diseños
-						div ¡pronto!
-					.ed-item
-						a(id="video")
-						h3 video
-						div ¡pronto!
+								.ed-item.pieza.web-1-3
+									p ejemplo 1
+								.ed-item.pieza.web-1-3
+									p ejemplo 2
+								.ed-item.pieza.web-1-3
+									p ejemplo 3
+						.ed-item
+							a(id="marca")
+							h3 marca
+							div ¡pronto!
+						.ed-item
+							a(id="disenos")
+							h3 diseños
+							div ¡pronto!
+						.ed-item
+							a(id="video")
+							h3 video
+							div ¡pronto!
+		include include/footer.jade

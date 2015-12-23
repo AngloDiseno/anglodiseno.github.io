@@ -1,13 +1,16 @@
-extends ./layout.jade
+extends ./layout
 block title
-	title Anglo | Diseño | gracias
-body.gracias
-	block container
-		.banner.ed-container.full
-			.ed-item.fondo.center
-				.ed-container
-					.ed-item
-						h2 Contacto
-				.contacto.ed-container.full.center
-					.ed-item.no-padding
-						include ../include/reserva.html
+	title Anglo | Diseño | contacto
+block body
+	body.contacto
+		main
+			include include/header.jade
+			.banner.ed-container.full
+				.ed-item.fondo.center
+					.ed-container
+						.ed-item
+							h2 Contacto
+					.contacto.ed-container.full.center
+						.ed-item.no-padding
+							include include/reserva.html
+		include include/footer.jade

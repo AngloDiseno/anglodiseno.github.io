@@ -1,9 +1,12 @@
 extends ./layout
 block title
 	title Anglo | Diseño | inicio
-body.inicio
-	block container
-		.banner.ed-container.full
-			.ed-item.fondo.center
-				.texto.center
-					| Diseñamos para ti, para tu carácter, para tu imagen, para tu entorno.
+block body
+	body.inicio
+		main
+			include include/header.jade
+			.banner.ed-container.full
+				.ed-item.fondo.center
+					.texto.center
+						| "Diseñamos para ti, para tu carácter, para tu imagen, para tu entorno."
+		include include/footer.jade
