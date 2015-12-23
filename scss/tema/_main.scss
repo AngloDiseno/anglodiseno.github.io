@@ -18,15 +18,16 @@ main
 	}
 	.texto
 	{
-		background-color: rgba(black, .3);
+		// background-color: rgba(black, .3);
 		max-width: 20em;
-		font-size: 1.2em;
-		color: white;
-		text-shadow:1px 1px 1px rgba(0, 0, 0, 0.5);
+		font-size: 2em;
+		font-weight: bold;
+		color: rgba(white,	.8);
+		text-shadow:1px 1px 7px rgba(180,180,0, 0.2);
 		text-align: center;
-		padding: 1em;
+		// padding: 1em;
 		margin-top:2em;
-		border-radius: .5em;
+		// border-radius: .5em;
 	}
 }
 
@@ -56,6 +57,8 @@ main
 	{
 		margin: 1em auto;
 		display: inherit;
+		background-color: transparent !important;
+		border-radius: 1em;
 	}
 }
 
