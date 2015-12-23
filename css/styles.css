@@ -2809,19 +2809,19 @@ main {
     background-size: cover;
     background-position: center center; }
   .banner .texto {
-    background-color: rgba(0, 0, 0, 0.3);
     max-width: 20em;
-    font-size: 1.2em;
-    color: white;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 2em;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 7px rgba(180, 180, 0, 0.2);
     text-align: center;
-    padding: 1em;
-    margin-top: 2em;
-    border-radius: .5em; }
+    margin-top: 2em; }
 
 .formulario iframe {
   margin: 1em auto;
-  display: inherit; }
+  display: inherit;
+  background-color: transparent !important;
+  border-radius: 1em; }
 
 .contacto > div {
   margin-bottom: 2em; }
