@@ -3,10 +3,11 @@ block title
 	title Anglo | Diseño | 404
 block body
 	body.404
-		block content
-			block container
-				.banner.ed-container.full
-					.ed-item.fondo.center
-						h1 Error 404 - Página no encontrada :(
-						p Lo siento no se encuentra la información solicitada.
-						a(href="http://anglo.cl/") Vuelva al inicio aquí
+		main
+			include include/header.jade
+			.banner.ed-container.full
+				.ed-item.fondo.center
+					h1 Error 404 - Página no encontrada :(
+					p Lo siento no se encuentra la información solicitada.
+					a(href="http://anglo.cl/") Vuelva al inicio aquí
+		include include/footer.jade
