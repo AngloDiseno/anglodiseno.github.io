@@ -1105,32 +1105,45 @@ class="no-padding" a la caja le da padding cero solo a ella
 .ed-menu a {
   display: block;
   width: 100%;
-  line-height: 3em;
+  line-height: 2em;
   padding: 0 1em; }
 
-.ed-menu.default, .ed-menu.nav-bar {
+.ed-menu.default {
   background: #eee; }
-  .ed-menu.default li, .ed-menu.nav-bar li {
+  .ed-menu.default li {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1; }
-    .ed-menu.default li:hover, .ed-menu.nav-bar li:hover {
+    .ed-menu.default li:hover {
       background: rgba(0, 0, 0, 0.1); }
-  .ed-menu.default ul, .ed-menu.nav-bar ul {
+  .ed-menu.default ul {
     background: #e1e1e1; }
-  .ed-menu.default a, .ed-menu.nav-bar a {
+  .ed-menu.default a {
+    color: #666; }
+
+.ed-menu.principal, .ed-menu.nav-bar {
+  background: none; }
+  .ed-menu.principal li, .ed-menu.nav-bar li {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+    .ed-menu.principal li:hover, .ed-menu.nav-bar li:hover {
+      background: rgba(0, 0, 0, 0.1); }
+  .ed-menu.principal ul, .ed-menu.nav-bar ul {
+    background: #e1e1e1; }
+  .ed-menu.principal a, .ed-menu.nav-bar a {
     color: #666; }
 
 .ed-menu.nav-bar {
-  border: 1px solid rgba(0, 0, 0, 0.1); }
+  border: none; }
   .ed-menu.nav-bar li {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    border-bottom: none; }
     .ed-menu.nav-bar li:last-child {
       border-right: none; }
   .ed-menu.nav-bar ul {
-    border: 1px solid rgba(0, 0, 0, 0.1); }
+    border: none; }
     .ed-menu.nav-bar ul li {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+      border-bottom: none; }
       .ed-menu.nav-bar ul li:last-child {
         border-bottom: none; }
 
@@ -2758,6 +2771,12 @@ h6 {
 .body.contacto nav .contacto {
   color: green; }
 
+nav {
+  margin-bottom: .5em; }
+  nav .principal, nav .ed-menu.nav-bar {
+    z-index: 1;
+    position: relative; }
+
 footer {
   background: rgba(0, 0, 0, 0.4);
   height: 150px;
@@ -2797,6 +2816,11 @@ footer {
           position: absolute;
           right: -1em; } }
 
+body {
+  font-family: 'Lato' !important;
+  font-size: 16px;
+  font-weight: 300; }
+
 main {
   min-height: 100vh;
   padding-bottom: 150px;
@@ -2811,17 +2835,22 @@ main {
   .banner .texto {
     max-width: 20em;
     font-size: 2em;
-    font-weight: bold;
     color: rgba(255, 255, 255, 0.8);
-    text-shadow: 1px 1px 7px rgba(180, 180, 0, 0.2);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
     text-align: center;
-    margin-top: 2em; }
+    margin-top: 2em;
+    font-family: 'Droid Serif';
+    font-weight: 400;
+    font-style: italic; }
 
 .formulario iframe {
   margin: 1em auto;
   display: inherit;
   background-color: transparent !important;
   border-radius: 1em; }
+
+.contacto .backgroundBg {
+  background: transparent !important; }
 
 .contacto > div {
   margin-bottom: 2em; }
@@ -2831,5 +2860,3 @@ main {
   height: 650px;
   width: 100%;
   border: none; }
-  .contacto iframe body.backgroundBg {
-    background-color: transparent !important; }

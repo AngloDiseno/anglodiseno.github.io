@@ -1,9 +1,17 @@
+body
+{
+	font-family: 'Lato' !important;
+	font-size: 16px;
+	font-weight:300;
+}
+
 main
 {
 	min-height: 100vh;
 	padding-bottom: 150px;
 	position: relative;
 }
+
 .banner
 {
 	min-height: 550px;
@@ -21,13 +29,16 @@ main
 		// background-color: rgba(black, .3);
 		max-width: 20em;
 		font-size: 2em;
-		font-weight: bold;
+		// font-weight: bold;
 		color: rgba(white,	.8);
-		text-shadow:1px 1px 7px rgba(180,180,0, 0.2);
+		text-shadow:1px 1px 4px rgba(0,0,0, 0.3);
 		text-align: center;
 		// padding: 1em;
 		margin-top:2em;
 		// border-radius: .5em;
+		font-family: 'Droid Serif' ;
+		font-weight: 400;
+		font-style: italic;
 	}
 }
 
@@ -66,6 +77,10 @@ main
 {
 	// position: relative;
 	// background-color:lightblue;
+	.backgroundBg
+	{
+		background:transparent !important;
+	}
 	>div
 	{
 		margin-bottom:2em;
@@ -77,9 +92,5 @@ main
 		height:650px;
 		width:100%;
 		border:none;
-		body.backgroundBg
-		{
-			background-color:transparent !important;
-		}
 	}
 }

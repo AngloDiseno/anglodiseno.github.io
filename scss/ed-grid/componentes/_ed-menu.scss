@@ -27,7 +27,7 @@
   a {
     display: block;
     width: 100%;
-    line-height: 3em;
+    line-height: 2em;
     padding: 0 1em;
   }
 
@@ -50,11 +50,38 @@
       color: #666;
     }
   }
+
+  // Estilo predeterminado (añadiendo la clase .default)
+  &.principal {
+    background: none;
+    li {
+      // Permitir a los <li> crecer hasta llenar todo_ el espacio
+      flex: 1;
+      // El hover en el <li> (y no en <a>) se mantiene aunque se descienda a sus hijos
+      &:hover {
+        // background: rgba(200,255,10,.2);
+        background: rgba(black,.1);
+      }
+    }
+    // submenús
+    ul {
+      background: darken(#eee,5);
+    }
+    a {
+      color: #666;
+      &:hover
+      {
+        // color:rgba(#BD8541,1) !important;
+      }
+    }
+  }
+
   // Estilo barra de navegación (con la clase .nav-bar)
   &.nav-bar {
     // hereda todas las propiedades de .default
-    @extend .default;
-    $border: 1px solid rgba(#000,.1);
+    @extend .principal;
+    // $border: 1px solid rgba(#000,.1);
+    $border: none;
     border: $border;
     // Bordes inferiores a los <li> menos el último
     // porque el menú es vertical

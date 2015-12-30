@@ -37,8 +37,7 @@ gulp.task('sass', function () {
     .pipe(plumber())
     .pipe(postcss(processors))
     .pipe(gulp.dest('./css'))
-    .pipe(connect.reload())
-    .pipe(notify({ message: 'OK - SCSS' }));
+    .pipe(connect.reload());
 });
 
 
