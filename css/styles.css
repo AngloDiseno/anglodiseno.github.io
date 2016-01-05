@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700italic);
 *,
 *:before,
 *:after {
@@ -1121,19 +1123,6 @@ class="no-padding" a la caja le da padding cero solo a ella
   .ed-menu.default a {
     color: #666; }
 
-.ed-menu.principal, .ed-menu.nav-bar {
-  background: none; }
-  .ed-menu.principal li, .ed-menu.nav-bar li {
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1; }
-    .ed-menu.principal li:hover, .ed-menu.nav-bar li:hover {
-      background: rgba(0, 0, 0, 0.1); }
-  .ed-menu.principal ul, .ed-menu.nav-bar ul {
-    background: #e1e1e1; }
-  .ed-menu.principal a, .ed-menu.nav-bar a {
-    color: #666; }
-
 .ed-menu.nav-bar {
   border: none; }
   .ed-menu.nav-bar li {
@@ -1175,7 +1164,7 @@ class="no-padding" a la caja le da padding cero solo a ella
         -ms-flex-align: center;
             align-items: center; }
     .tablet-horizontal.nav-bar > li {
-      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
       border-bottom: none; }
     .tablet-horizontal a {
       text-align: center; }
@@ -1201,7 +1190,7 @@ class="no-padding" a la caja le da padding cero solo a ella
         -ms-flex-align: center;
             align-items: center; }
     .web-horizontal.nav-bar > li {
-      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
       border-bottom: none; }
     .web-horizontal a {
       text-align: center; }
@@ -2727,8 +2716,9 @@ class="no-padding" a la caja le da padding cero solo a ella
 
 body {
   background: #fff;
-  font-family: "Open Sans", sans-serif;
-  color: #333; }
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-weight: 300; }
 
 a {
   color: initial;
@@ -2744,10 +2734,11 @@ p {
     margin: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   text-transform: normal;
-  color: #222; }
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
 
 h1 {
   font-size: 2em;
@@ -2768,8 +2759,71 @@ h5 {
 h6 {
   font-size: 0.8em; }
 
-.body.contacto nav .contacto {
-  color: green; }
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+.ed-menu.principal, .ed-menu.nav-bar {
+  background: none; }
+  .ed-menu.principal li, .ed-menu.nav-bar li {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+    .ed-menu.principal li:hover::before, .ed-menu.nav-bar li:hover::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.3);
+      bottom: 0;
+      left: 30%;
+      right: 30%; }
+    .ed-menu.principal li:hover a, .ed-menu.nav-bar li:hover a {
+      color: white; }
+  .ed-menu.principal ul, .ed-menu.nav-bar ul {
+    background: #e1e1e1; }
+  .ed-menu.principal a, .ed-menu.nav-bar a {
+    color: white; }
+
+.home .principal a.item_inicio, .home .ed-menu.nav-bar a.item_inicio,
+.portafolio .principal a.item_portafolio,
+.portafolio .ed-menu.nav-bar a.item_portafolio,
+.servicios .principal a.item_servicios,
+.servicios .ed-menu.nav-bar a.item_servicios,
+.contacto .principal a.item_contacto,
+.contacto .ed-menu.nav-bar a.item_contacto {
+  color: #DB4500; }
+  .home .principal a.item_inicio::before, .home .ed-menu.nav-bar a.item_inicio::before,
+  .portafolio .principal a.item_portafolio::before,
+  .portafolio .ed-menu.nav-bar a.item_portafolio::before,
+  .servicios .principal a.item_servicios::before,
+  .servicios .ed-menu.nav-bar a.item_servicios::before,
+  .contacto .principal a.item_contacto::before,
+  .contacto .ed-menu.nav-bar a.item_contacto::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #DB4500;
+    bottom: 0;
+    left: 30%;
+    right: 30%; }
+
+.logo svg {
+  max-height: 3em;
+  max-width: 15em;
+  fill: white;
+  -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2)); }
 
 nav {
   margin-bottom: .5em; }
@@ -2816,32 +2870,27 @@ footer {
           position: absolute;
           right: -1em; } }
 
-body {
-  font-family: 'Lato' !important;
-  font-size: 16px;
-  font-weight: 300; }
+body.home, body.portafolio, body.servicios, body.contacto {
+  background-image: url("/img/paisajes/volcan_osorno.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center; }
 
 main {
   min-height: 100vh;
   padding-bottom: 150px;
   position: relative; }
 
-.banner {
-  min-height: 550px; }
-  .banner .fondo {
-    background-image: url(/img/paisajes/volcan_osorno.jpg);
-    background-size: cover;
-    background-position: center center; }
-  .banner .texto {
-    max-width: 20em;
-    font-size: 2em;
-    color: rgba(255, 255, 255, 0.8);
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    margin-top: 2em;
-    font-family: 'Droid Serif';
-    font-weight: 400;
-    font-style: italic; }
+.banner .texto {
+  max-width: 20em;
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-top: 2em;
+  font-family: 'Droid Serif';
+  font-weight: 800;
+  font-style: italic; }
 
 .formulario iframe {
   margin: 1em auto;
@@ -2860,3 +2909,6 @@ main {
   height: 650px;
   width: 100%;
   border: none; }
+
+body.portafolio h2, body.portafolio h3 {
+  text-align: center; }

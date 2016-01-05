@@ -5,6 +5,8 @@
 // Font face. Incluya el import de Google Fonts o su regla font-face
 // Lo usual es una fuente para los textos y otra para los títulos
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700italic);
 
 // Variables para aplicarlas en font-weight
   $light      : 300;
@@ -23,17 +25,20 @@
   $gris-oscuro : #444;
   $gris-claro  : #f0f0f0;
   $rojo        : darken(tomato,10);
+ 
+ $destacado    : #DB4500;
+ $principal     : #444;
 
 // ESTILOS BASE
   $body--background  : #fff;                      // fondo para el body
-  $body--font-family : 'Open Sans', sans-serif;   // fuente predeterminada
-  $body--color       : #333;                      // color de texto predeterminado
+  $body--font-family : 'Lato', sans-serif;   // fuente predeterminada
+  $body--color       : white;                      // color de texto predeterminado
 
 // ESTILOS DE ENCABEZADOS
-  $header--font-family    : 'Open Sans', sans-serif;  // fuente para los headers (h1,h2,h3...)
+  $header--font-family    : 'Lato', sans-serif;  // fuente para los headers (h1,h2,h3...)
   $header--font-weight    : $bold;                    // grosor de fuente para los headers
   $header--text-transform : normal;                   // normal, uppercase, lowercase, capitalize
-  $header--color          : #222;                     // color predeterminado de los header
+  $header--color          : $principal;                     // color predeterminado de los header
 
 // TAMAÑO DE LOS ENCABEZADOS (h1...h6)
   $h1--font-size : 2em;
@@ -72,3 +77,4 @@
 // Modulos. Los componentes que se repiten en varias partes del proyecto
   @import "modulos/modulos";
   @import "modulos/fuentes";
+  @import "modulos/portafolio";

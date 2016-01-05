@@ -1,8 +1,22 @@
+@mixin fondo($img)
+{
+	background-image: url($img);
+	background-size: cover;
+	// background-repeat: no-repeat;
+	background-attachment: fixed;
+	// background-position:0 -477px;
+	background-position: center center;
+}
+
 body
 {
-	font-family: 'Lato' !important;
-	font-size: 16px;
-	font-weight:300;
+	&.home,
+	&.portafolio,
+	&.servicios,
+	&.contacto
+	{
+		@include fondo("/img/paisajes/volcan_osorno.jpg");
+	}
 }
 
 main
@@ -11,33 +25,24 @@ main
 	padding-bottom: 150px;
 	position: relative;
 }
-
 .banner
 {
-	min-height: 550px;
-	.fondo
-	{
-		background-image: url(/img/paisajes/volcan_osorno.jpg);
-		background-size: cover;
-		// background-repeat: no-repeat;
-		// background-attachment: fixed;
-		// background-position:0 -477px;
-		background-position: center center;
-	}
+	// min-height: 550px;
+
 	.texto
 	{
 		// background-color: rgba(black, .3);
 		max-width: 20em;
 		font-size: 2em;
 		// font-weight: bold;
-		color: rgba(white,	.8);
+		color: rgba(white,	.9);
 		text-shadow:1px 1px 4px rgba(0,0,0, 0.3);
 		text-align: center;
 		// padding: 1em;
 		margin-top:2em;
 		// border-radius: .5em;
 		font-family: 'Droid Serif' ;
-		font-weight: 400;
+		font-weight: 800;
 		font-style: italic;
 	}
 }
