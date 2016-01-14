@@ -2738,7 +2738,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   text-transform: normal;
   color: rgba(255, 255, 255, 0.9);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-align: center; }
 
 h1 {
   font-size: 2em;
@@ -2875,6 +2876,16 @@ body.home, body.portafolio, body.servicios, body.contacto {
   background-size: cover;
   background-attachment: fixed;
   background-position: center center; }
+  body.home::before, body.portafolio::before, body.servicios::before, body.contacto::before {
+    content: "Volcán Osorno 2010";
+    color: rgba(7, 13, 18, 0.5);
+    background-color: rgba(253, 253, 253, 0.2);
+    font-size: .8em;
+    padding: .5em 1em;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    border-radius: 0 0 0 10px; }
 
 main {
   min-height: 100vh;

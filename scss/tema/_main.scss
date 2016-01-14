@@ -16,6 +16,23 @@ body
 	&.contacto
 	{
 		@include fondo("/img/paisajes/volcan_osorno.jpg");
+		&::before
+		{
+			content: "Volcán Osorno 2010";
+			color: rgba($negro, .5);
+			background-color: rgba($blanco, .2);
+			font-size: .8em;
+			padding: .5em 1em;
+			position: absolute;
+			top: 0px;
+			right:0;
+			border-radius:
+							0
+							0
+							0
+							10px
+							;
+		}
 	}
 }
 
