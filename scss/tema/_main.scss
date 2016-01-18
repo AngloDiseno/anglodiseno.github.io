@@ -33,6 +33,20 @@ body
 							10px
 							;
 		}
+		&::after
+		{
+			content: "en construcción versión Beta 0.5.2";
+			position: absolute;
+			top: 0px;
+			left:0;
+			padding: .1em 1em .3em;
+			background-color: rgba($blanco, .1);;
+			border: 1px solid rgba($negro, .1);;
+			font-size: .8em;
+			border-radius: 5px;
+			margin: .5em;
+			text-shadow: 1px 1px 0px rgba($negro, .3);
+		}
 	}
 }
 
