@@ -2915,6 +2915,17 @@ main {
   font-weight: 800;
   font-style: italic; }
 
+.libro article {
+  margin: .5em 0; }
+  .libro article a {
+    color: rgba(68, 68, 68, 0.4);
+    text-decoration: underline;
+    text-shadow: 1px 1px 0px rgba(253, 253, 253, 0.2);
+    line-height: 2; }
+    .libro article a:hover {
+      color: #444444;
+      text-shadow: 1px 1px 0px rgba(253, 253, 253, 0.4); }
+
 .formulario iframe {
   margin: 1em auto;
   display: inherit;

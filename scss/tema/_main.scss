@@ -78,6 +78,28 @@ main
 	}
 }
 
+.libro
+{
+	// border:1px solid red;
+	article
+	{
+		margin: .5em 0;
+		a
+		{
+			color: rgba($principal, .4);
+			text-decoration: underline;
+			text-shadow: 1px 1px 0px rgba($blanco, .2);
+			line-height: 2;
+			&:hover
+			{
+				color: rgba($principal, 1);
+			text-shadow: 1px 1px 0px rgba($blanco, .4);
+			}
+		}
+	}
+}
+
+
 // .version
 // {
 // 	padding:1em;
