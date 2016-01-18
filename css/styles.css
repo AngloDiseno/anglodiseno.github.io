@@ -2918,12 +2918,14 @@ main {
 .libro article {
   margin: .5em 0; }
   .libro article a {
-    color: rgba(68, 68, 68, 0.4);
-    text-decoration: underline;
-    text-shadow: 1px 1px 0px rgba(253, 253, 253, 0.2);
-    line-height: 2; }
+    color: rgba(68, 68, 68, 0.5);
+    background-color: rgba(253, 253, 253, 0.3);
+    padding: .2em .5em .4em;
+    line-height: 2;
+    border-radius: 3px; }
     .libro article a:hover {
       color: #444444;
+      background-color: rgba(253, 253, 253, 0.8);
       text-shadow: 1px 1px 0px rgba(253, 253, 253, 0.4); }
 
 .formulario iframe {
