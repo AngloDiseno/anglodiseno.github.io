@@ -78,27 +78,56 @@ main
 	}
 }
 
+// Portafolio
+// ==========
+
 .libro
 {
 	// border:1px solid red;
 	article
 	{
-		margin: .5em 0;
+		margin: 1.2em 0;
+		padding: 0 2em;
 
 		a
 		{
-			color: rgba($principal, .5);
 			background-color: rgba($blanco, .3);
-			padding: .2em .5em .4em;
+			// padding: .5em;
 			// text-decoration: underline;
-			// text-shadow: 1px 1px 0px rgba($blanco, .2);
-			line-height: 2;
-			border-radius: 3px;
+			// box-shadow: 3px 3px 5px rgba($negro, .5);
+			border-radius: 8px;
+			display: block;
+			position: relative;
+			border: 1px solid rgba($principal, .5);
 			&:hover
 			{
+			border: 1px solid $principal;
 				color: rgba($principal, 1);
-			background-color: rgba($blanco, .8);
-			text-shadow: 1px 1px 0px rgba($blanco, .4);
+				background-color: rgba($blanco, .8);
+				box-shadow: 0px 0px 15px rgba($blanco, .8);
+				// text-shadow: 1px 1px 0px rgba($blanco, .4);
+				.article-texto
+				{
+					color: rgba($blanco, 1);
+					background-color: rgba($principal, 1);
+				}
+			}
+			img
+			{
+				border-radius: 8px;
+			}
+			.article-texto
+			{
+				// display: none;
+				border-radius: 0 0 5px 5px;
+				color: rgba($principal, .6);
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: rgba($blanco, 1);
+				line-height: 2;
+
 			}
 		}
 	}

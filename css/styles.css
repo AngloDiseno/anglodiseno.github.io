@@ -2916,17 +2916,33 @@ main {
   font-style: italic; }
 
 .libro article {
-  margin: .5em 0; }
+  margin: 1.2em 0;
+  padding: 0 2em; }
   .libro article a {
-    color: rgba(68, 68, 68, 0.5);
     background-color: rgba(253, 253, 253, 0.3);
-    padding: .2em .5em .4em;
-    line-height: 2;
-    border-radius: 3px; }
+    border-radius: 8px;
+    display: block;
+    position: relative;
+    border: 1px solid rgba(68, 68, 68, 0.5); }
     .libro article a:hover {
+      border: 1px solid #444;
       color: #444444;
       background-color: rgba(253, 253, 253, 0.8);
-      text-shadow: 1px 1px 0px rgba(253, 253, 253, 0.4); }
+      box-shadow: 0px 0px 15px rgba(253, 253, 253, 0.8); }
+      .libro article a:hover .article-texto {
+        color: #fdfdfd;
+        background-color: #444444; }
+    .libro article a img {
+      border-radius: 8px; }
+    .libro article a .article-texto {
+      border-radius: 0 0 5px 5px;
+      color: rgba(68, 68, 68, 0.6);
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fdfdfd;
+      line-height: 2; }
 
 .formulario iframe {
   margin: 1em auto;
