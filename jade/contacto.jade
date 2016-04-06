@@ -2,7 +2,7 @@ extends ./layout
 block title
 	title Anglo | Diseño | contacto
 block body
-	body.contacto
+	body#contacto
 		main
 			include include/header.jade
 			.banner.ed-container.full
@@ -17,5 +17,7 @@ block body
 							br
 					.contacto.ed-container.abcenter
 						.ed-item.abcenter.no-padding
-							include include/reserva.html
+							#reserva
+								include include/reserva.html
+							// include include/ello.html
 		include include/footer.jade

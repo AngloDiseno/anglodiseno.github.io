@@ -10,10 +10,10 @@
 
 body
 {
-	&.home,
-	&.portafolio,
-	&.servicios,
-	&.contacto
+	&#home,
+	&#portafolio,
+	&#servicios,
+	&#contacto
 	{
 		@include fondo("/img/paisajes/volcan_osorno.jpg");
 		&::before
@@ -156,33 +156,34 @@ main
 
 .formulario
 {
-	iframe
-	{
-		margin: 1em auto;
-		display: inherit;
-		background-color: transparent !important;
-		border-radius: 1em;
-	}
+	#reserva
+    {
+        iframe   
+        {
+            margin: 1em auto;
+            display: inherit;
+            background-color: transparent !important;
+            border-radius: 1em;
+        }
+    }
 }
 
 .contacto
 {
 	// position: relative;
 	// background-color:lightblue;
-	.backgroundBg
-	{
-		background:transparent !important;
-	}
 	>div
 	{
 		margin-bottom:2em;
 	}
-	iframe
+	#reserva iframe
 	{
+		// background:transparent ;
 		// position:absolute;
 		display: inherit;
 		height:650px;
 		width:100%;
 		border:none;
+		background-color:lightblue !important;
 	}
 }
