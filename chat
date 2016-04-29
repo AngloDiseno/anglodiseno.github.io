@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+<!-- anglo @ NandOX Chat / Start -->
+<script language="javascript">
+var nandconf = {};
+
+nandconf['website']           = 'anglo.cl';
+nandconf['room']              = 'anglo';
+nandconf['lang']              = 'es';
+nandconf['fullscreen']        = '0';
+nandconf['width']             = '750';
+nandconf['height']            = '440';
+nandconf['skin']              = 'nandox2';
+nandconf['ulisticons']        = 'nandox';
+nandconf['eroschan']          = '0';
+nandconf['showServerWindow']  = '1';
+nandconf['disableFlash']      = '1';
+
+</script>
+<div id="free-chat-nandox"></div>
+<script type="text/javascript" src="http://www.nandox.com/js/free-chat-loader.js" async="async"></script>
+<!-- anglo @ NandOX Chat / end -->
+
+
+
+</body>
+</html>
