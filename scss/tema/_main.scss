@@ -18,20 +18,15 @@ body
 		@include fondo("/img/paisajes/volcan_osorno.jpg");
 		&::before
 		{
-			content: "Volcán Osorno 2010";
-			color: rgba($negro, .5);
 			background-color: rgba($blanco, .2);
+			border-radius: 0 0 0 10px;
+			color: rgba($negro, .5);
+			content: "Volcán Osorno 2010";
 			font-size: .8em;
 			padding: .5em 1em;
 			position: absolute;
-			top: 0px;
 			right:0;
-			border-radius:
-							0
-							0
-							0
-							10px
-							;
+			top: 0px;
 		}
 		&::after
 		{
@@ -63,18 +58,18 @@ main
 	.texto
 	{
 		// background-color: rgba(black, .3);
-		max-width: 20em;
 		font-size: 2em;
+		max-width: 20em;
 		// font-weight: bold;
 		color: rgba(white,	.9);
-		text-shadow:1px 1px 4px rgba(0,0,0, 0.3);
 		text-align: center;
+		text-shadow:1px 1px 4px rgba(0,0,0, 0.3);
 		// padding: 1em;
 		margin-top:2em;
 		// border-radius: .5em;
 		font-family: 'Droid Serif' ;
-		font-weight: 800;
 		font-style: italic;
+		font-weight: 800;
 	}
 }
 

@@ -2877,15 +2877,15 @@ body#home, body#portafolio, body#servicios, body#contacto {
   background-attachment: fixed;
   background-position: center center; }
   body#home::before, body#portafolio::before, body#servicios::before, body#contacto::before {
-    content: "Volcán Osorno 2010";
-    color: rgba(7, 13, 18, 0.5);
     background-color: rgba(253, 253, 253, 0.2);
+    border-radius: 0 0 0 10px;
+    color: rgba(7, 13, 18, 0.5);
+    content: "Volcán Osorno 2010";
     font-size: .8em;
     padding: .5em 1em;
     position: absolute;
-    top: 0px;
     right: 0;
-    border-radius: 0 0 0 10px; }
+    top: 0px; }
   body#home::after, body#portafolio::after, body#servicios::after, body#contacto::after {
     content: "en construcción versión Beta 0.5.2";
     position: absolute;
@@ -2905,15 +2905,15 @@ main {
   position: relative; }
 
 .banner .texto {
-  max-width: 20em;
   font-size: 2em;
+  max-width: 20em;
   color: rgba(255, 255, 255, 0.9);
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
   text-align: center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
   margin-top: 2em;
   font-family: 'Droid Serif';
-  font-weight: 800;
-  font-style: italic; }
+  font-style: italic;
+  font-weight: 800; }
 
 .libro article {
   margin: 1.2em 0;
