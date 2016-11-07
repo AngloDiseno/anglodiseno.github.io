@@ -1,7 +1,8 @@
 // formulario de Contacto desde zoho crm
 .anglo-forma {
+	max-width: 600px;
 	table {
-		background-color: rgba(black, 0.3);
+		background-color: rgba(black, 0.1);
 		padding: 1em;
 	}
 	input[type="text"], textarea {
@@ -17,11 +18,12 @@
 		}
 
 	}
+
 	.forma-btn {
 		border: 0;
 		background: rgba(#ffc, 0.8) !important;
 		box-shadow: 0px 10px 5px -5px rgba(black, 0.4);
-		margin: 0 1em;
+		margin: 0 1em 0.5em;
 		&:hover {
 			background-color: lighten($destacado, 25) !important;
 		}
