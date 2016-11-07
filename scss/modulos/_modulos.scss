@@ -1,0 +1,29 @@
+// formulario de Contacto desde zoho crm
+.anglo-forma {
+	table {
+		background-color: rgba(black, 0.3);
+		padding: 1em;
+	}
+	input[type="text"], textarea {
+		background-color: rgba(white, 0.3);
+		padding: 0.3em;
+		border: 1px solid transparent;
+		&:focus {
+			background-color: rgba(white, 0.5);
+		}
+		&:hover {
+			background-color: rgba(white, 0.4);
+			border: 1px solid $destacado;
+		}
+
+	}
+	.forma-btn {
+		border: 0;
+		background: rgba(#ffc, 0.8) !important;
+		box-shadow: 0px 10px 5px -5px rgba(black, 0.4);
+		margin: 0 1em;
+		&:hover {
+			background-color: lighten($destacado, 25) !important;
+		}
+	}
+}

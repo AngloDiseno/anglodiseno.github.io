@@ -2803,7 +2803,7 @@ summary {
 #servicios .ed-menu.nav-bar a.item_servicios,
 #contacto .principal a.item_contacto,
 #contacto .ed-menu.nav-bar a.item_contacto {
-  color: #DB4500; }
+  color: #db4500; }
   #home .principal a.item_inicio::before, #home .ed-menu.nav-bar a.item_inicio::before,
   #portafolio .principal a.item_portafolio::before,
   #portafolio .ed-menu.nav-bar a.item_portafolio::before,
@@ -2814,7 +2814,7 @@ summary {
     content: "";
     position: absolute;
     height: 1px;
-    background-color: #DB4500;
+    background-color: #db4500;
     bottom: 0;
     left: 30%;
     right: 30%; }
@@ -2965,6 +2965,28 @@ main {
   width: 100%;
   border: none;
   background-color: lightblue !important; }
+
+.anglo-forma table {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1em; }
+
+.anglo-forma input[type="text"], .anglo-forma textarea {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.3em;
+  border: 1px solid transparent; }
+  .anglo-forma input[type="text"]:focus, .anglo-forma textarea:focus {
+    background-color: rgba(255, 255, 255, 0.5); }
+  .anglo-forma input[type="text"]:hover, .anglo-forma textarea:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #db4500; }
+
+.anglo-forma .forma-btn {
+  border: 0;
+  background: rgba(255, 255, 204, 0.8) !important;
+  box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.4);
+  margin: 0 1em; }
+  .anglo-forma .forma-btn:hover {
+    background-color: #ff8f5c !important; }
 
 body.portafolio h2, body.portafolio h3 {
   text-align: center; }
