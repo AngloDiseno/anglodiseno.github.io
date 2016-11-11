@@ -2871,12 +2871,12 @@ footer {
           position: absolute;
           right: -1em; } }
 
-body#home, body#portafolio, body#servicios, body#contacto {
+body#home, body#portafolio, body#servicios, body#contacto, body#gracias {
   background-image: url("/img/paisajes/volcan_osorno.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center center; }
-  body#home::before, body#portafolio::before, body#servicios::before, body#contacto::before {
+  body#home::before, body#portafolio::before, body#servicios::before, body#contacto::before, body#gracias::before {
     background-color: rgba(253, 253, 253, 0.2);
     border-radius: 0 0 0 10px;
     color: rgba(7, 13, 18, 0.5);
@@ -2886,7 +2886,7 @@ body#home, body#portafolio, body#servicios, body#contacto {
     position: absolute;
     right: 0;
     top: 0px; }
-  body#home::after, body#portafolio::after, body#servicios::after, body#contacto::after {
+  body#home::after, body#portafolio::after, body#servicios::after, body#contacto::after, body#gracias::after {
     content: "en construcción versión Beta 0.5.2";
     position: absolute;
     top: 0px;
