@@ -1,0 +1,19 @@
+extends ./layout
+block title
+	title Anglo | Diseño | suscripcion
+block body
+	body#suscripcion
+		main
+			include include/header.jade
+			.banner.ed-container.full
+				.ed-item.fondo.center
+					.ed-container
+						.ed-item.abcenter
+							h2 Suscripción
+					.contacto.ed-container.abcenter
+						.ed-item.abcenter.no-padding
+							#reserva
+								//- include include/forma.html
+								include include/suscripcion.html
+							//- include include/ello.html
+		include include/footer.jade
