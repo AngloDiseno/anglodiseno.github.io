@@ -80,3 +80,5 @@ Icon
 /*.sublime-project
 *.sublime-workspace
 prepros-6\.config
+
+package-lock\.json
